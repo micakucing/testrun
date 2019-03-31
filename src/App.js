@@ -1,21 +1,20 @@
 import React, { Component } from 'react';
-import { browserHistory } from 'react-router'; // importing from 'react-router'
 
-import {  BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Switch,HashRouter, DelayLink, Link, BrowserRouter as Router, Route } from 'react-router-dom';
 import Index from "./router/home";
 import About from "./router/about";
 
 
 function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL} history={browserHistory}>
+    <HashRouter basename={process.env.PUBLIC_URL}>
       <div>
-
+ <Switch>
         <Route path="/" exact component={Index} />
         <Route path="/about" component={About} />
-
+ </Switch>
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 
