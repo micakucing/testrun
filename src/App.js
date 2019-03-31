@@ -7,7 +7,7 @@ import About from "./router/about";
 
 function App() {
   return (
-    <HashRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter>
       <div>
  <Switch>
         <Route path="/" exact component={Index} />
