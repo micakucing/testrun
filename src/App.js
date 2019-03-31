@@ -6,7 +6,7 @@ import About from "./router/about";
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div>
 
         <Route path="/" exact component={Index} />
