@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { browserHistory, BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Index from "./router/home";
 import About from "./router/about";
 
 
 function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router basename={process.env.PUBLIC_URL} history={browserHistory}>
       <div>
 
         <Route path="/" exact component={Index} />
