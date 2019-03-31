@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { browserHistory, BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { browserHistory } from 'react-router'; // importing from 'react-router'
+
+import {  BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Index from "./router/home";
 import About from "./router/about";
 
