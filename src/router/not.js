@@ -2,11 +2,10 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import { default as minifyCssString } from 'minify-css-string'
 
-
-class home extends Component {
+class not extends Component {
     componentDidMount() {}
     render() {
-    	const cssString = `
+    		const cssString = `
 .App{
 	text-align: center;
 }
@@ -16,12 +15,12 @@ class home extends Component {
         return (
 
             <div>
-              <style dangerouslySetInnerHTML={{__html: minifyCssString(cssString) }} /> 
+                          <style dangerouslySetInnerHTML={{__html: minifyCssString(cssString) }} /> 
 
-              <h1 className="App">Still Worrking</h1>
+               <h1 className="App">Sorry page not found</h1>
       </div>
 
         );
     }
 }
-export default home;
+export default not;
