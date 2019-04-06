@@ -6,7 +6,7 @@ import { default as minifyCssString } from 'minify-css-string'
 class home extends Component {
     componentDidMount() {}
     render() {
-    	const cssString = `
+        const cssString = `
 .App{
 	text-align: center;
 }
@@ -14,10 +14,8 @@ class home extends Component {
  
 }`
         return (
-
-            <div>
+       <div>
               <style dangerouslySetInnerHTML={{__html: minifyCssString(cssString) }} /> 
-
               <h1 className="App">Still Worrking</h1>
       </div>
 
