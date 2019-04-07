@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import { default as minifyCssString } from 'minify-css-string'
-import slid from "./slid";
+import Slid from "./slid";
 import Nav from "./nav";
-import mid from "./mid";
-import bot from "./aboutb";
+import Mid from "./mid";
+import Bot from "./aboutb";
+import Fot from "./foot";
 
 class home extends Component {
     componentDidMount() {}
@@ -233,8 +234,10 @@ display: none;
               <style dangerouslySetInnerHTML={{__html: minifyCssString(cssString) }} /> 
                
   <Nav />
-
-
+  <Slid />
+ <Mid />
+  <Bot />
+  <Fot />
       </div>
 
         );

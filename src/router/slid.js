@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 import { default as minifyCssString } from 'minify-css-string'
 
 class slid extends Component {
-    componentDidMount() {}
+    componentDidMount() {
+         
+    }
     render() {
     		const cssString = `
 .App{
