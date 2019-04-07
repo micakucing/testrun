@@ -246,7 +246,7 @@ h1{
   .site-navbar .site-top-icons ul .site-menu-toggle {
     font-size: 25px;
     position: relative;
-    top: 2px;
+    top: 15px;
     margin-left: 20px; }
   .site-navbar .site-navigation.border-bottom {
     border-bottom: 1px solid #f3f3f4 !important; }
