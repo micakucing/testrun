@@ -180,6 +180,10 @@ margin: 0 auto;
       display: none;
     }
     @media (max-width: 992px) {
+      .tight {
+   font-size: 18px;
+     
+}
       .site-blocks-cover, .site-blocks-cover .row{
         min-height: 350px;
       }
