@@ -94,10 +94,16 @@ h1{
     font-size: 14px !important;
     padding: 10px 20px !important; }
   .btn.btn-primary {
-    font-size: 17px;
-    border-color: #fff;
-     font-weight: 300;
-    letter-spacing: .2em; }
+        border-color: #fff;
+    font-weight: 300;
+    border-radius: 0;
+    letter-spacing: .2em;
+    font-weight: bold;
+    font-size: 11px !important;
+    padding: 15px !important;
+    width: 15%;
+
+    color: #fff; }
     .btn-primary {
     color: #fff;
     background-color: transparent;
@@ -263,13 +269,14 @@ h1{
       display: inline-block;
       padding: 10px 10px; }
       .site-navbar .site-navigation .site-menu > li > a {
-        font-family: Mor;
-        padding: 10px 10px;
-        text-transform: uppercase;
-        letter-spacing: .05em;
-        color: #fff;
-        font-size: 15px;
-        text-decoration: none !important; }
+            font-family: Mor;
+    padding: 10px 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none !important; }
         .site-navbar .site-navigation .site-menu > li > a:hover {
           color: #fff; }
     .site-navbar .site-navigation .site-menu .has-children {
