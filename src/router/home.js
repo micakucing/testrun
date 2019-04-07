@@ -219,7 +219,7 @@ display: block;
  position: absolute;
     height: 80px;
     background-image: url(images/logo.png);
-    width: 25%;
+    width: 45%;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
