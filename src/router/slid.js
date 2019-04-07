@@ -8,18 +8,11 @@ class slid extends Component {
     }
     render() {
     		const cssString = `
- 
- #mags{
-    max-width: 50%;
- }
+
 .App{
 	text-align: center;
 }
-@media (max-width: 992px) {
- #mags{
-    max-width: 80%;
- }
-}`
+ `
 
   var links = ["http://www.def.com"];
         var images = ["https://res.cloudinary.com/forestrun/image/upload/v1554636363/Foto_Forest02.jpg"];

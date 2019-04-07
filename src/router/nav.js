@@ -2,10 +2,76 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import { default as minifyCssString } from 'minify-css-string'
 import $ from "jquery";
+import { Fade, Stagger } from 'react-animation-components'
+
 class nav extends Component {
-    componentDidMount() {}
+    componentDidMount() {
+
+
+        $('#ccl > div').hide(); // hide all slides
+        $('#ccl > div:first-child').show(); // show first slide
+        let time = 5000;
+        this.interval = setInterval(function() {
+                let slidea = $('#ccl  > div:first-child');
+                let slideb = slidea.next();
+                let width = $('#ccl > div:first-child').width();
+                $('#ccl > div:first-child').addClass("ignoresize").fadeOut(time).next().fadeIn(300).end().appendTo("#ccl");
+            },
+            time + 5000);
+
+
+        $('#ggb > div').hide(); // hide all slides
+        $('#ggb > div:first-child').show(); // show first slide
+        let times = 5000;
+        this.intervals = setInterval(function() {
+                let slideas = $('#ggb  > div:first-child');
+                let slidebs = slideas.next();
+                let widths = $('#ggb > div:first-child').width();
+                $('#ggb > div:first-child').addClass("ignoresize").fadeOut(times).next().fadeIn(300).end().appendTo("#ggb");
+            },
+            time + 5000);
+
+
+
+    }
+
+
+    componentWillUnmount() {
+        clearInterval(this.interval)
+        clearInterval(this.intervals)
+    }
+
+
     render() {
         const cssString = `
+         #plomini{
+display: none;
+  }
+  #ploxmini{
+display: none;
+  }
+   #regme{
+      margin-top: 20px;
+
+    }
+#plo{
+margin: 0 auto;
+    height: 150px;
+    background-image: url(https://res.cloudinary.com/forestrun/image/upload/v1554636231/Logo_Run.png);
+    width: 60%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#plox{
+margin: 0 auto;
+    height: 150px;
+    background-image: url(https://res.cloudinary.com/forestrun/image/upload/v1554636231/Logo_Run2.png);
+    width: 100%;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
         #gh{
           margin-bottom: 30px;
         }
@@ -22,59 +88,87 @@ class nav extends Component {
     height: 80px;
     position: absolute;
 }
-#plo{
-margin: 0 auto;
-    height: 150px;
-    background-image: url(https://res.cloudinary.com/forestrun/image/upload/v1554636231/Logo_Run.png);
-    width: 60%;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-#plox{
-margin: 0 auto;
-    height: 150px;
-    background-image: url(https://res.cloudinary.com/forestrun/image/upload/v1554636231/Logo_Run2.png);
-    width: 100%;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+  #lkps{
+    padding-bottom: 39px;
+        margin-top: 20px;
 }
 @media (max-width: 992px) {
  .btn.btn-primary {
   
     width: 25%;
 }
+
+      #lkps{
+    padding-bottom: 30px;
+    margin-top: 10%;
+    margin-bottom: 1%;
+}
+
+}
+
+@media (max-width: 860px) {
+
+ 
+}
+
+    @media (max-width: 800px) {
+
+#plo{
+     height: 150px;
+   
+    width: 100%;
+    }
+#plox{
+     height: 150px;
+     width: 100%;
+    
+}
+
+
+
+
+
+ #plomini{
+display: block;
+    height: 80px;
+     background-image: url(https://res.cloudinary.com/forestrun/image/upload/v1554636231/Logo_Run.png);
+    width: 35%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  #mags {
+    max-width: 60%;
+}
+     #ploxmini{
+display: block;
+    height: 80px;
+       background-image: url(https://res.cloudinary.com/forestrun/image/upload/v1554636231/Logo_Run2.png);
+
+     width: 65%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  #ccl{
+    display: none;
+  }
+    #plo{
+  }
+display: none;
+  }
+
+}
+
 }
 
 `
- $('#ccl > div').hide(); // hide all slides
-    $('#ccl > div:first-child').show(); // show first slide
-  let time = 5000;
-    setInterval(function () {
-    let slidea = $('#ccl  > div:first-child');
-    let slideb = slidea.next();
-    let width = $('#ccl > div:first-child').width();
-    $('#ccl > div:first-child').addClass("ignoresize").fadeOut(time).next().fadeIn(300).end().appendTo("#ccl");
-        },
-    time + 5000);
- 
-
- $('#ggb > div').hide(); // hide all slides
-    $('#ggb > div:first-child').show(); // show first slide
-  let times = 5000;
-    setInterval(function () {
-    let slideas = $('#ggb  > div:first-child');
-    let slidebs = slideas.next();
-    let widths = $('#ggb > div:first-child').width();
-    $('#ggb > div:first-child').addClass("ignoresize").fadeOut(times).next().fadeIn(300).end().appendTo("#ggb");
-        },
-    time + 5000);
 
 
 
 
- 
+
+
 
 
         let c, homes, abouts, works, shops, kontak, ati;
@@ -200,7 +294,7 @@ margin: 0 auto;
             </nav>
             <div className="container">
                 <div className="row align-items-start align-items-md-center justify-content-end">
-                    <div className="col-md-12 text-center text-md-center pt-5 pt-md-0" id="lkp">
+                    <div className="col-md-12 text-center text-md-center pt-5 pt-md-0" id="lkps">
   <img class="thumb-image loaded"  src="https://res.cloudinary.com/forestrun/image/upload/f_auto/v1554636128/t.png" />
 
                         <div className="intro-text text-center text-md-center">

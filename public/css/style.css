@@ -36,8 +36,8 @@ a {
       color: #fff;
     }
     .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle{
-      background-color: #fff;
-      border: #fff;
+      background-color: #c2ff19;
+      border: #c2ff19;
       color: #000;
 
     }
@@ -100,7 +100,7 @@ h1{
     letter-spacing: .1em;
     font-weight: bold;
     font-size: 11px !important;
-    padding: 15px !important;
+    padding: 13px !important;
     width: 13%;
 
     color: #fff; }
