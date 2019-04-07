@@ -174,7 +174,7 @@ h1{
 .site-navbar {
   background: #262F5F;
   margin-bottom: 0px;
-  z-index: 1999;
+  z-index: 0;
   position: relative; }
   .site-navbar.transparent {
     background: transparent; }

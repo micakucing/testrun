@@ -38,7 +38,7 @@ jQuery(document).ready(function($) {
 
 	var siteMenuClone = function() {
 
-		$('<div class="site-mobile-menu"></div>').prependTo('.site-wrap');
+		/*$('<div class="site-mobile-menu"></div>').prependTo('.site-wrap');
 
 		$('<div class="site-mobile-menu-header"></div>').prependTo('.site-mobile-menu');
 		$('<div class="site-mobile-menu-close "></div>').prependTo('.site-mobile-menu-header');
@@ -81,7 +81,7 @@ jQuery(document).ready(function($) {
 
       });
 
-    }, 1000);
+    }, 1000);*/
 
 		$('body').on('click', '.arrow-collapse', function(e) {
       var $this = $(this);
@@ -105,7 +105,7 @@ jQuery(document).ready(function($) {
 			}
 		})
 
-		$('body').on('click', '.js-menu-toggle', function(e) {
+		$(document).on('click', '.js-menu-toggle', function(e) {
 			var $this = $(this);
 			e.preventDefault();
 

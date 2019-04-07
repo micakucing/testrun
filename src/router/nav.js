@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import { default as minifyCssString } from 'minify-css-string'
-
+import $ from "jquery";
 class nav extends Component {
     componentDidMount() {}
     render() {
@@ -16,7 +16,25 @@ class nav extends Component {
 
             <div>
                           <style dangerouslySetInnerHTML={{__html: minifyCssString(cssString) }} /> 
+                          <div className="site-wrap">
+<div className="site-mobile-menu"> 
+    <div className="site-mobile-menu-header">
+        <div className="site-mobile-menu-close mt-3">
 
+
+        </div>
+    </div>
+    <div className="site-mobile-menu-body">
+
+<ul id="lb">
+ <li><a href="#">HOME</a></li>
+                        <li><a href="#">INFORMATION</a></li>
+                        <li><a href="#">REGISTRATION</a></li>
+                        <li><a href="#">CONTACT</a></li></ul>
+
+    </div>   
+</div>
+</div>
                 <header className="site-navbar" role="banner">
             <div className="site-navbar-top">
                 <div className="container">
@@ -44,8 +62,9 @@ class nav extends Component {
                                
                             </div>
                                 <ul>
-                                    <li className="d-inline-block d-md-none ml-md-0"><a href="#" className="site-menu-toggle js-menu-toggle">
+                                    <li className="d-inline-block d-md-none ml-md-0">
 
+                                    <a href="#" className="site-menu-toggle js-menu-toggle">
 
 
                                       <span className="icon-menu"></span></a></li>
@@ -58,10 +77,10 @@ class nav extends Component {
             <nav className="site-navigation text-right text-md-center" role="navigation">
                 <div className="container">
                     <ul className="site-menu js-clone-nav d-none d-md-block">
-                        <li><a href="shop.html">HOME</a></li>
+                        <li><a href="#">HOME</a></li>
                         <li><a href="#">INFORMATION</a></li>
                         <li><a href="#">REGISTRATION</a></li>
-                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="#">CONTACT</a></li>
                     </ul>
                 </div>
             </nav>
