@@ -6,11 +6,17 @@ class foot extends Component {
     componentDidMount() {}
     render() {
     		const cssString = `
+        #mmg{
+          max-width: 50%;
+          margin-bottom: 40px;
+        }
 .App{
 	text-align: center;
 }
 @media (max-width: 992px) {
- 
+ #mmg {
+    max-width: 70%;
+ }
 }`
         return (
 
@@ -28,39 +34,12 @@ class foot extends Component {
                 <li><span id="pg" className="icon-instagram"></span></li>
               </ul>
                 <div className="col-md-12">
-  <ul className="sosbs">
-                
-                <li><span id="pgx" className="pi"></span></li>
-                <li><span id="pgx" className="pw"></span></li>
-                <li><span id="pgx" className="pwv"></span></li>
-              </ul>
+  
           
-                   <div className="row" id="krows">
+            <img id="mmg"  className="thumb-image loaded" src="https://res.cloudinary.com/forestrun/image/upload/v1554636230/logo_sponsor.png" />
 
-          <div className="col-md-6 col-lg-4 d-lg-flex mb-4 mb-lg-0 pl-4"   data-aos-delay="">
-            
-            <div className="text">
-              <div className="text-uppercase-p-i"></div>
-              <p></p>
-              <div></div>
-            </div>
-          </div>
-          <div className="col-md-6 col-lg-4 d-lg-flex mb-4 mb-lg-0 pl-4"  data-aos-delay="100">
-          
-            <div className="text"  >
-              <div className="text-uppercase-p-d"></div>
-              <p></p>
-            </div>
-          </div>
-          <div className="col-md-6 col-lg-4 d-lg-flex mb-4 mb-lg-0 pl-4"   data-aos-delay="200">
-          
-            <div className="text"  >
-              <div className="text-uppercase-p-g"></div>
-              <p></p>
-            </div>
-          </div>
-        </div>
-                   <div className="obb"></div>
+   
+                   <div className="obb">Copyright ©2019 by Cikole Forest Run. All rights reserved. | Design by Larva7 Studio</div>
                 </div>
             </div>
         </div>

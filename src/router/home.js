@@ -11,6 +11,10 @@ class home extends Component {
     componentDidMount() {}
     render() {
         const cssString = `
+        #ccl{
+              height: 150px;
+              overflow: hidden;
+        }
   #pg{
        font-size: 18px;
     padding: 8px;
@@ -19,19 +23,29 @@ class home extends Component {
   #plomini{
 display: none;
   }
-
+  #ploxmini{
+display: none;
+  }
 #plo{
 margin: 0 auto;
     height: 150px;
-    background-image: url(images/logo.png);
+    background-image: url(https://res.cloudinary.com/forestrun/image/upload/v1554636231/Logo_Run.png);
     width: 60%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#plox{
+margin: 0 auto;
+    height: 150px;
+     width: 100%;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
     #regme{
       margin-top: 20px;
-      
+
     }
     .ppt{
         margin-top: 50px !important;
@@ -62,15 +76,21 @@ margin: 0 auto;
     color: #2B315E;
   }
   .obb{
-        border-bottom: 5px solid;
-    margin: 0 18%;
-  }
-  .pbb{
-        margin-bottom: 30px;
+        margin: 0 5%;
     font-family: mor;
-    color: #2B315E;
-    font-weight: bold !important;
+    color: #fff;
+    letter-spacing: .3px;
   }
+  #pbb{
+       
+        font-size: 30px;
+    color: #25262a;
+    position: relative;
+    font-weight: bold;
+    font-family: mor;
+    text-transform: uppercase;
+  }
+ 
 .tight {
    font-size: 25px;
     line-height: 0.5em;
@@ -86,11 +106,14 @@ margin: 0 auto;
     }
     .ops{
           font-family: mol;
-    color: #2B315E;
+       color: #25262a;
+    margin: 80px 8%;
+    font-weight: 600;
     }
     .sosb {
       width: 100%;
       padding: 0;
+          margin-bottom: 25px;
     }
     .sosb li {
       display: inline-block;
@@ -183,12 +206,33 @@ margin: 0 auto;
       display: none;
     }
     @media (max-width: 992px) {
+
+
+.site-section-heading.text-center:before {
+    
+    width: 10%;
+  
+}
+
+#pbb{
+  font-size: 25px;
+}
+
+
+.ops {
+   
+    margin-top: 100px;
+}
+
+        .obb{
+       font-size: 10px;
+  }
       .tight {
    font-size: 18px;
      
 }
       .site-blocks-cover, .site-blocks-cover .row{
-        min-height: 350px;
+        min-height: 250px;
       }
         .sosbs{
         display: block;
@@ -215,24 +259,40 @@ margin: 0 auto;
   #ttx{margin: 0;
 
     }
+    .site-section {
+    padding: 3.5em 0;
+}
       #lkp{
   padding-bottom: 30px;
-    margin-top: 50px;
+    margin-top: 10%;
 }
       .h1, h1 {
     font-size: 1.5rem;
 }
    #plomini{
 display: block;
- position: absolute;
     height: 80px;
-    background-image: url(images/logo.png);
-    width: 45%;
+     background-image: url(https://res.cloudinary.com/forestrun/image/upload/v1554636231/Logo_Run.png);
+    width: 35%;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
   }
+     #ploxmini{
+display: block;
+    height: 80px;
+       background-image: url(https://res.cloudinary.com/forestrun/image/upload/v1554636231/Logo_Run2.png);
+
+     width: 65%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  #ccl{
+    display: none;
+  }
     #plo{
+  }
 display: none;
   }
 }`

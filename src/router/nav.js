@@ -6,12 +6,39 @@ class nav extends Component {
     componentDidMount() {}
     render() {
         const cssString = `
+        #gh{
+          margin-bottom: 30px;
+        }
 .App{
   text-align: center;
 }
 .thumb-image{
   max-width: 100%;
     max-height: 100%;
+}
+#ggb{
+      width: 90%;
+    overflow: hidden;
+    height: 80px;
+    position: absolute;
+}
+#plo{
+margin: 0 auto;
+    height: 150px;
+    background-image: url(https://res.cloudinary.com/forestrun/image/upload/v1554636231/Logo_Run.png);
+    width: 60%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#plox{
+margin: 0 auto;
+    height: 150px;
+    background-image: url(https://res.cloudinary.com/forestrun/image/upload/v1554636231/Logo_Run2.png);
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 @media (max-width: 992px) {
  .btn.btn-primary {
@@ -21,15 +48,41 @@ class nav extends Component {
 }
 
 `
+ $('#ccl > div').hide(); // hide all slides
+    $('#ccl > div:first-child').show(); // show first slide
+  let time = 5000;
+    setInterval(function () {
+    let slidea = $('#ccl  > div:first-child');
+    let slideb = slidea.next();
+    let width = $('#ccl > div:first-child').width();
+    $('#ccl > div:first-child').addClass("ignoresize").fadeOut(time).next().fadeIn(300).end().appendTo("#ccl");
+        },
+    time + 5000);
+ 
+
+ $('#ggb > div').hide(); // hide all slides
+    $('#ggb > div:first-child').show(); // show first slide
+  let times = 5000;
+    setInterval(function () {
+    let slideas = $('#ggb  > div:first-child');
+    let slidebs = slideas.next();
+    let widths = $('#ggb > div:first-child').width();
+    $('#ggb > div:first-child').addClass("ignoresize").fadeOut(times).next().fadeIn(300).end().appendTo("#ggb");
+        },
+    time + 5000);
 
 
 
- let c, homes, abouts, works, shops, kontak, ati;
+
+ 
+
+
+        let c, homes, abouts, works, shops, kontak, ati;
         c = window.location.hash.substr(2)
         var t = window.location.href
         var o = t.split("/")[4]
-     
-         
+
+
         if (c == "") {
             homes = <a className="activex"><li>&nbsp;&nbsp;Home &nbsp;&nbsp;</li> </a>
         } else {
@@ -90,7 +143,7 @@ class nav extends Component {
 </div>
                 <header className="site-navbar" role="banner">
             <div className="site-navbar-top">
-                <div className="container">
+                <div  className="container">
                     <div className="order-3 order-md-3 text-right">
                         <div className="site-top-icons">
                              <ul className="sosb">
@@ -104,15 +157,23 @@ class nav extends Component {
                     <div className="row align-items-center">
                         <div className="col-6 col-md-4 order-2 order-md-1 site-search-icon text-left">
                         </div>
-                        <div className="col-12 mb-3 mb-md-0 col-md-4 order-1 order-md-2 text-center">
+                        <div id="ccl" className="col-12 mb-3 mb-md-0 col-md-4 order-1 order-md-2 text-center">
                             <div id="plo" className="site-logo">
+                               
+                            </div>
+                               <div id="plox" className="site-logo">
                                
                             </div>
                         </div>
                         <div className="col-12 col-md-4 order-3 order-md-3 text-right">
                             <div id="rel" className="site-top-icons">
+                            <div id="ggb">
                                  <div id="plomini" className="site-logo">
                                
+                            </div>
+                              <div id="ploxmini" className="site-logo">
+                               
+                            </div>
                             </div>
                                 <ul>
                                     <li className="d-inline-block d-md-none ml-md-0">
@@ -128,7 +189,7 @@ class nav extends Component {
                 </div>
             </div>
             <nav className="site-navigation text-right text-md-center" role="navigation">
-                <div className="container">
+                <div id="gh" className="container">
                     <ul className="site-menu js-clone-nav d-none d-md-block">
                         <li><a href="#">HOME</a></li>
                         <li><a href="#">INFORMATION</a></li>
@@ -140,7 +201,7 @@ class nav extends Component {
             <div className="container">
                 <div className="row align-items-start align-items-md-center justify-content-end">
                     <div className="col-md-12 text-center text-md-center pt-5 pt-md-0" id="lkp">
-                                                                      <img class="thumb-image loaded"  src="https://static1.squarespace.com/static/5b0ec95b4cde7a026389266e/t/5c6648b008522977bb9f621f/1550207159794/TCSNYM19+1500x277+2019ApplyNow+Bnr%5B2%5D.png?format=1500w" />
+  <img class="thumb-image loaded"  src="https://res.cloudinary.com/forestrun/image/upload/f_auto/v1554636128/t.png" />
 
                         <div className="intro-text text-center text-md-center">
                                <p>

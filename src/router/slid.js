@@ -4,19 +4,25 @@ import { default as minifyCssString } from 'minify-css-string'
 
 class slid extends Component {
     componentDidMount() {
-         
+
     }
     render() {
     		const cssString = `
+ 
+ #mags{
+    max-width: 50%;
+ }
 .App{
 	text-align: center;
 }
 @media (max-width: 992px) {
- 
+ #mags{
+    max-width: 80%;
+ }
 }`
 
-  var links = ["http://www.abc.com","http://www.def.com"];
-        var images = ["https://images.unsplash.com/photo-1516214104703-d870798883c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80","https://www.forestryengland.uk/sites/default/files/styles/forest_slide_wide_desk/public/media/woodland3.jpg?h=78566fdd&itok=HXeDhGX0"];
+  var links = ["http://www.def.com"];
+        var images = ["https://res.cloudinary.com/forestrun/image/upload/v1554636363/Foto_Forest02.jpg"];
         var i = 0;
         var renew = setInterval(function(){
             if(links.length == i){
@@ -38,8 +44,8 @@ class slid extends Component {
             <div className="container">
                 <div className="row align-items-start align-items-md-center justify-content-end">
                     <div className="col-md-12 text-center text-md-center pt-5 pt-md-0" id="lkp">
-                        <h1 className="mb-2">A run in nature,</h1>
-                                               <h1 className="mb-2">run the soul back home.</h1>
+                                      <img id="mags" className="thumb-image loaded" src="https://res.cloudinary.com/forestrun/image/upload/v1554635818/A_run_in_nature.png" />
+
 
                     </div>
                 </div>

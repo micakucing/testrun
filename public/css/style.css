@@ -97,11 +97,11 @@ h1{
         border-color: #fff;
     font-weight: 300;
     border-radius: 0;
-    letter-spacing: .2em;
+    letter-spacing: .1em;
     font-weight: bold;
     font-size: 11px !important;
     padding: 15px !important;
-    width: 15%;
+    width: 13%;
 
     color: #fff; }
     .btn-primary {
@@ -151,15 +151,15 @@ h1{
   .site-section-heading.text-center:before {
     content: "";
     left: 50%;
-    top: 0;
+    top: 80px;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     position: absolute;
-    width: 40px;
-    height: 2px;
-    background: #7971ea; }
-
+    width: 5%;
+    height: 3px;
+    background: #25262a; }
+   
 .border-top {
   border-top: 1px solid #edf0f5 !important; }
 
@@ -498,8 +498,7 @@ h1{
   background-repeat: no-repeat;
   background-position: center center; }
   .site-blocks-cover, .site-blocks-cover .row {
-    min-height: 600px;
-    height: calc(100vh - 174px); }
+    min-height: 480px; }
   .site-blocks-cover h1 {
     font-size: 30px;
     font-weight: 900;
