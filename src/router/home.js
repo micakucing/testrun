@@ -265,7 +265,7 @@ margin: 0 auto;
       #lkp{
     padding-bottom: 30px;
     margin-top: 10%;
-    margin-bottom: 30px;
+    margin-bottom: 10%;
 }
       .h1, h1 {
     font-size: 1.5rem;
