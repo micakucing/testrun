@@ -92,6 +92,23 @@ margin: 0 auto;
     padding-bottom: 39px;
         margin-top: 20px;
 }
+a.clik{
+  color: #c2ff19 !important; 
+}
+.site-mobile-menu-body ul {
+  padding-left: 0;
+  list-style: none;
+}
+.site-mobile-menu-body ul li {
+ padding-bottom: 15px;
+}
+
+.site-mobile-menu-body ul li a{
+  font-size: 20px;
+  color: #fff;
+  font-family: mor;
+
+}
 @media (max-width: 992px) {
  .btn.btn-primary {
   
@@ -175,12 +192,11 @@ display: none;
         c = window.location.hash.substr(2)
         var t = window.location.href
         var o = t.split("/")[4]
-
-
+ 
         if (c == "") {
-            homes = <a className="activex"><li>&nbsp;&nbsp;Home &nbsp;&nbsp;</li> </a>
+            homes =  <li><a className="clik">HOME</a></li>
         } else {
-            homes = <a href="/" id="ppl"><li>&nbsp;&nbsp;Home &nbsp;&nbsp;</li></a>
+            homes = <li><a  href="#/">HOME</a></li>
         }
         if (c == "about") {
             abouts = <a className="activex"><li>&nbsp;&nbsp;About &nbsp;&nbsp;</li> </a>
@@ -227,7 +243,12 @@ display: none;
     <div className="site-mobile-menu-body">
 
 <ul id="lb">
- <li><a href="#">HOME</a></li>
+
+
+                      
+                        {homes}
+
+
                         <li><a href="#">INFORMATION</a></li>
                         <li><a href="#">REGISTRATION</a></li>
                         <li><a href="#">CONTACT</a></li></ul>
@@ -285,7 +306,8 @@ display: none;
             <nav className="site-navigation text-right text-md-center" role="navigation">
                 <div id="gh" className="container">
                     <ul className="site-menu js-clone-nav d-none d-md-block">
-                        <li><a href="#">HOME</a></li>
+                       
+ {homes}
                         <li><a href="#">INFORMATION</a></li>
                         <li><a href="#">REGISTRATION</a></li>
                         <li><a href="#">CONTACT</a></li>
