@@ -9,9 +9,62 @@ class nav extends Component {
 .App{
   text-align: center;
 }
+.thumb-image{
+  max-width: 100%;
+    max-height: 100%;
+}
 @media (max-width: 992px) {
- 
-}`
+ .btn.btn-primary {
+  
+    width: 25%;
+}
+}
+
+`
+
+
+
+ let c, homes, abouts, works, shops, kontak, ati;
+        c = window.location.hash.substr(2)
+        var t = window.location.href
+        var o = t.split("/")[4]
+     
+         
+        if (c == "") {
+            homes = <a className="activex"><li>&nbsp;&nbsp;Home &nbsp;&nbsp;</li> </a>
+        } else {
+            homes = <a href="/" id="ppl"><li>&nbsp;&nbsp;Home &nbsp;&nbsp;</li></a>
+        }
+        if (c == "about") {
+            abouts = <a className="activex"><li>&nbsp;&nbsp;About &nbsp;&nbsp;</li> </a>
+        } else {
+            abouts = <a href="#/about" id="ppl"><li>&nbsp;&nbsp;About &nbsp;&nbsp;</li> </a>
+        }
+        if (c == "work" || o == "workproduct") {
+            works = <a id="aloy" className="activex"><li>&nbsp;&nbsp;Works &nbsp;&nbsp;</li> </a>
+        } else {
+            works = <a href="#/work" id="ppl"><li>&nbsp;&nbsp;Works &nbsp;&nbsp;</li> </a>
+        }
+
+        if (c == "articles" || o == "articles-data") {
+            ati = <a className="activex"><li>&nbsp;&nbsp;Articles &nbsp;&nbsp;</li></a>
+        } else {
+            ati = <a href="#/articles" id="ppl" ><li>&nbsp;&nbsp;Articles &nbsp;&nbsp;</li></a>
+        }
+        if (c == "contact") {
+            kontak = <a className="activex"><li>&nbsp;&nbsp;Contact &nbsp;&nbsp;</li> </a>
+
+        } else {
+            kontak = <a href="#/contact" id="ppl"><li>&nbsp;&nbsp;Contact &nbsp;&nbsp;</li></a>
+
+
+        }
+
+
+
+
+
+
         return (
 
             <div>
@@ -87,11 +140,11 @@ class nav extends Component {
             <div className="container">
                 <div className="row align-items-start align-items-md-center justify-content-end">
                     <div className="col-md-12 text-center text-md-center pt-5 pt-md-0" id="lkp">
-                        <h1 className="mb-2">CIKOLE FOREST RUN - FUN TRIAL</h1>
+                                                                      <img class="thumb-image loaded"  src="https://static1.squarespace.com/static/5b0ec95b4cde7a026389266e/t/5c6648b008522977bb9f621f/1550207159794/TCSNYM19+1500x277+2019ApplyNow+Bnr%5B2%5D.png?format=1500w" />
+
                         <div className="intro-text text-center text-md-center">
-                                                 <h1 className="mb-2">8 SEPTEMBER, 2019</h1>
                                <p>
-                                <a id="regme" href="#" className="btn btn-sm btn-primary">Register</a>
+                                <a id="regme" href="#" className="btn btn-sm btn-primary">DAFTAR</a>
                             </p>
                         </div>
                     </div>

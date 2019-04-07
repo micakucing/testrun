@@ -12,8 +12,9 @@ class home extends Component {
     render() {
         const cssString = `
   #pg{
-    font-size: 20px;
-    padding: 15px;
+       font-size: 18px;
+    padding: 8px;
+        color: #fff;
   }
   #plomini{
 display: none;
@@ -30,12 +31,14 @@ margin: 0 auto;
 }
     #regme{
       margin-top: 20px;
+      
     }
     .ppt{
         margin-top: 50px !important;
     }
     #grn{
-      background-color: #B8FF45;
+      padding: 0;
+      /*background-color: #B8FF45;*/
     }
     .text{
       width: 100%;
