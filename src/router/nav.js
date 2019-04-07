@@ -148,9 +148,9 @@ margin: 0 auto;
                         <div className="site-top-icons">
                              <ul className="sosb">
                 
+                <li><span id="pg" className="icon-instagram"></span></li>
                 <li><span id="pg" className="icon-twitter"></span></li>
                 <li><span id="pg" className="icon-facebook-f"></span></li>
-                <li><span id="pg" className="icon-instagram"></span></li>
               </ul>
                         </div>
                     </div>

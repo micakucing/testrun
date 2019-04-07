@@ -29,9 +29,10 @@ class foot extends Component {
             <div id="lok" className="row pt-5 mt-5 text-center">
         <ul className="sosb">
                 
+                    
+                <li><span id="pg" className="icon-instagram"></span></li>
                 <li><span id="pg" className="icon-twitter"></span></li>
                 <li><span id="pg" className="icon-facebook-f"></span></li>
-                <li><span id="pg" className="icon-instagram"></span></li>
               </ul>
                 <div className="col-md-12">
   

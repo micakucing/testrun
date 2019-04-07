@@ -109,10 +109,13 @@ h1{
     background-color: transparent;
     border-color: #fff;
 }
+#gh .site-menu a:hover{
+ color: #c2ff19;
+}
 .btn-primary:hover {
-    color: #2B315E;
-    background-color: #fff;
-    border-color: #fff;
+    color: #212D61;
+      background-color: #c2ff19;
+    border-color: #c2ff19;
 }
   /*.btn:hover {
     -webkit-box-shadow: 0 5px 20px -7px rgba(0, 0, 0, 0.9) !important;
@@ -164,7 +167,7 @@ h1{
   border-top: 1px solid #edf0f5 !important; }
 
 .site-footer {
-  background-color: #262F5F;
+  background-color: #212D61;
   padding: 4em 0; }
   .site-footer ul li {
     margin-bottom: 10px; }
@@ -178,7 +181,7 @@ h1{
 
 /* Navbar */
 .site-navbar {
-  background: #262F5F;
+  background: #212D61;
   margin-bottom: 0px;
   z-index: 0;
   position: relative; }
