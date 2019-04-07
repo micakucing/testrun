@@ -5,19 +5,11 @@ import { default as minifyCssString } from 'minify-css-string'
 class slid extends Component {
     componentDidMount() {
 
-    }
-    render() {
-    		const cssString = `
 
-.App{
-	text-align: center;
-}
- `
-
-  var links = ["http://www.def.com"];
-        var images = ["https://res.cloudinary.com/forestrun/image/upload/v1554636363/Foto_Forest02.jpg"];
-        var i = 0;
-        var renew = setInterval(function(){
+  let links = ["http://www.def.com"];
+        let images = ["https://res.cloudinary.com/forestrun/image/upload/v1554636363/Foto_Forest02.jpg"];
+        let i = 0;
+        let renew = setInterval(function(){
             if(links.length == i){
                 i = 0;
             }
@@ -28,6 +20,18 @@ class slid extends Component {
 
         }
         },1000);
+
+    }
+    render() {
+    		const cssString = `
+#boxed{
+    margin: 0 auto;
+}
+.App{
+	text-align: center;
+}
+ `
+
         return (
 
             <div>
@@ -35,7 +39,7 @@ class slid extends Component {
 
                   <div className="site-blocks-cover" id="bannerImage"  data-aos="fade">
             <div className="container">
-                <div className="row align-items-start align-items-md-center justify-content-end">
+                <div id="boxed" className="row align-items-start align-items-md-center justify-content-end">
                     <div className="col-md-12 text-center text-md-center pt-5 pt-md-0" id="lkp">
                                       <img id="mags" className="thumb-image loaded" src="https://res.cloudinary.com/forestrun/image/upload/v1554635818/A_run_in_nature.png" />
 
