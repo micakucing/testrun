@@ -232,7 +232,7 @@ margin: 0 auto;
      
 }
       .site-blocks-cover, .site-blocks-cover .row{
-        min-height: 250px;
+        min-height: 200px;
       }
         .sosbs{
         display: block;
