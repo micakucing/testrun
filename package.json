@@ -2,7 +2,7 @@
   "name": "cikoleforestrun",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://cikoleforestrun.co.id/",
+  "homepage": "https://micakucing.github.io/testrun/",
   "dependencies": {
     "express": "^4.16.3",
     "express-favicon": "^2.0.1",
