@@ -30,6 +30,22 @@ class slid extends Component {
 .App{
 	text-align: center;
 }
+ #mags{
+    max-width: 50%;
+ }
+    @media (max-width: 992px) {
+   #mags{
+    max-width: 70%;
+ }
+
+    }
+   @media (max-width: 800px) {
+  #mags {
+        max-width: 80%;
+}
+
+}
+
  `
 
         return (

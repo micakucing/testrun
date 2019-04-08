@@ -123,9 +123,7 @@ class home extends Component {
       display: none;
     }
 
- #mags{
-    max-width: 50%;
- }
+
     @media (max-width: 992px) {
 
 
@@ -189,9 +187,7 @@ class home extends Component {
       .h1, h1 {
     font-size: 1.5rem;
 }
-   #mags{
-    max-width: 70%;
- }
+
  
 }
 @media (max-width: 860px) {
