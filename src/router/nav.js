@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 import { default as minifyCssString } from 'minify-css-string'
 import $ from "jquery";
 import { Fade, Stagger } from 'react-animation-components'
- 
+ import queryString from 'query-string';
+
 
 class nav extends Component {
     componentDidMount() {
-
-
+ 
         $('#ccl > div').hide(); // hide all slides
         $('#ccl > div:first-child').show(); // show first slide
         let time = 5000;
@@ -237,8 +237,7 @@ display: none;
             
         })
 
-
-
+ 
 
         let c, homes, abouts, blow, tops, works, bnrs, shops, kontak, ati;
         c = window.location.hash.substr(2)
@@ -265,13 +264,13 @@ display: none;
             abouts = <li><a id="hrf" href="#/information">INFORMATION</a></li>
               
         }
-        if (c == "work" || o == "workproduct") {
-            works = <a id="aloy" className="activex"><li>&nbsp;&nbsp;Works &nbsp;&nbsp;</li> </a>
-                bnrs = ''
-                 blow ='padd'
-                  tops ='padtops'
+        if (c == "information" || o == "information") {
+             abouts =  <li><a className="clik">INFORMATION</a></li>
+               bnrs = ''
+                blow ='padd'
+                tops ='padtops'
         } else {
-            works = <a id="hrf" href="#/work" id="ppl"><li>&nbsp;&nbsp;Works &nbsp;&nbsp;</li> </a>
+            abouts = <li><a id="hrf" href="#/information">INFORMATION</a></li>
               
         }
 
