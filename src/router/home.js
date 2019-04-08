@@ -31,10 +31,7 @@ class home extends Component {
     font-weight: bold;
     color: #2B315E;
     }
-    #lok{
-      padding-top: 0 !important;
-      margin-top:  0 !important;
-    }
+   
   #ttx h2{
     font-size: 30px;
     font-family: mor;

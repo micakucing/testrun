@@ -17,6 +17,10 @@ class foot extends Component {
         font-size: 16px;
     letter-spacing: .3px;
   }
+   #lok{
+      padding-top: 0 !important;
+      margin-top:  0 !important;
+    }
 .App{
 	text-align: center;
 }
