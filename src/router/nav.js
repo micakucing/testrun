@@ -12,7 +12,7 @@ class nav extends Component {
         $('#ccl > div').hide(); // hide all slides
         $('#ccl > div:first-child').show(); // show first slide
         let time = 5000;
-        this.interval = setInterval(function() {
+        this.interval = setInterval(() => { 
                 let slidea = $('#ccl  > div:first-child');
                 let slideb = slidea.next();
                 let width = $('#ccl > div:first-child').width();
@@ -24,7 +24,7 @@ class nav extends Component {
         $('#ggb > div').hide(); // hide all slides
         $('#ggb > div:first-child').show(); // show first slide
         let times = 5000;
-        this.intervals = setInterval(function() {
+        this.intervals = setInterval(() => { 
                 let slideas = $('#ggb  > div:first-child');
                 let slidebs = slideas.next();
                 let widths = $('#ggb > div:first-child').width();
@@ -35,7 +35,10 @@ class nav extends Component {
 
 
     }
-
+  componentWillMount() {
+  clearInterval(this.interval)
+        clearInterval(this.intervals)
+}
 
     componentWillUnmount() {
         clearInterval(this.interval)
