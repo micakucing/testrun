@@ -19,6 +19,7 @@ class slid extends Component {
             i++;
 
         }
+         clearInterval()
         },1000);
 
     }

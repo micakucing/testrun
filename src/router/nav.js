@@ -12,11 +12,14 @@ class nav extends Component {
         $('#ccl > div').hide(); // hide all slides
         $('#ccl > div:first-child').show(); // show first slide
         let time = 5000;
+        let ol = 
         this.interval = setInterval(() => { 
                 let slidea = $('#ccl  > div:first-child');
                 let slideb = slidea.next();
                 let width = $('#ccl > div:first-child').width();
                 $('#ccl > div:first-child').addClass("ignoresize").fadeOut(time).next().fadeIn(300).end().appendTo("#ccl");
+                clearInterval()
+
             },
             time + 5000);
 
@@ -29,9 +32,9 @@ class nav extends Component {
                 let slidebs = slideas.next();
                 let widths = $('#ggb > div:first-child').width();
                 $('#ggb > div:first-child').addClass("ignoresize").fadeOut(times).next().fadeIn(300).end().appendTo("#ggb");
+                 clearInterval()
             },
             time + 5000);
-
 
 
     }
