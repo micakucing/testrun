@@ -84,6 +84,7 @@ class home extends Component {
        color: #25262a;
     margin: 80px 8%;
     font-weight: 600;
+    margin-bottom: 0;
     }
     .sosb {
       width: 100%;
