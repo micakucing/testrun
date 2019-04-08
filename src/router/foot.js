@@ -10,10 +10,20 @@ class foot extends Component {
           max-width: 50%;
           margin-bottom: 40px;
         }
+          .obb{
+        margin: 0 5%;
+    font-family: mor;
+    color: #fff;
+        font-size: 15px;
+    letter-spacing: .3px;
+  }
 .App{
 	text-align: center;
 }
 @media (max-width: 992px) {
+         .obb{
+       font-size: 10px;
+  }
  #mmg {
     max-width: 70%;
  }

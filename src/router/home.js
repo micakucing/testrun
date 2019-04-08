@@ -50,12 +50,7 @@ class home extends Component {
      font-weight: bold !important;
     color: #2B315E;
   }
-  .obb{
-        margin: 0 5%;
-    font-family: mor;
-    color: #fff;
-    letter-spacing: .3px;
-  }
+
   #pbb{
        
         font-size: 30px;
@@ -150,9 +145,7 @@ class home extends Component {
     margin-top: 100px;
 }
 
-        .obb{
-       font-size: 10px;
-  }
+ 
       .tight {
    font-size: 18px;
      
