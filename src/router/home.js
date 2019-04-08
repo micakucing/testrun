@@ -8,7 +8,11 @@ import Bot from "./aboutb";
 import Fot from "./foot";
 
 class home extends Component {
-    componentDidMount() {}
+    componentDidMount() {
+ 
+
+
+    }
     render() {
         const cssString = `
       

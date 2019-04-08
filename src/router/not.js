@@ -9,7 +9,7 @@ class not extends Component {
   let c = window.location.hash.substr(2)
    let format = /[ !@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
 if(format.test(c)){
-window.location.href="/testrun/#/"
+window.location.href="https://micakucing.github.io/testrun/#/"
 //window.location.href="/"
 return
 }else{
@@ -21,7 +21,7 @@ return
        let c = window.location.hash.substr(2)
    let format = /[ !@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
 if(format.test(c)){
-window.location.href="/testrun/#/"
+window.location.href="https://micakucing.github.io/testrun/#/"
 //window.location.href="/"
 return
 }else{
