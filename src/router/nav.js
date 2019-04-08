@@ -222,7 +222,11 @@ display: none;
 
 
 
+ $(document).on("click", "#hrf", function(e) {
 
+            $('body').removeClass('offcanvas-menu')
+            
+        })
 
 
 
@@ -237,7 +241,7 @@ display: none;
             bnrs = <div className="container"><div className="row align-items-start align-items-md-center justify-content-end"><div className="col-md-12 text-center text-md-center pt-5 pt-md-0" id="lkps"><img className="thumb-image loaded"  src="https://res.cloudinary.com/forestrun/image/upload/f_auto/v1554636128/t.png" /> <div className="intro-text text-center text-md-center"><p><a id="regme" href="#" className="btn btn-sm btn-primary">DAFTAR</a></p></div></div></div></div>
              blow =''
         } else {
-            homes = <li><a  href="#/">HOME</a></li>
+            homes = <li><a id="hrf"  href="#/">HOME</a></li>
                         bnrs =  <div className="container"><div className="row align-items-start align-items-md-center justify-content-end"><div className="col-md-12 text-center text-md-center pt-5 pt-md-0" id="lkps"><img className="thumb-image loaded"  src="https://res.cloudinary.com/forestrun/image/upload/f_auto/v1554636128/t.png" /> <div className="intro-text text-center text-md-center"><p><a id="regme" href="#" className="btn btn-sm btn-primary">DAFTAR</a></p></div></div></div></div>
  blow =''
         }
@@ -246,7 +250,7 @@ display: none;
                bnrs = ''
                 blow ='padd'
         } else {
-            abouts = <li><a href="#/information">INFORMATION</a></li>
+            abouts = <li><a id="hrf" href="#/information">INFORMATION</a></li>
               
         }
         if (c == "work" || o == "workproduct") {
@@ -254,7 +258,7 @@ display: none;
                 bnrs = ''
                  blow ='padd'
         } else {
-            works = <a href="#/work" id="ppl"><li>&nbsp;&nbsp;Works &nbsp;&nbsp;</li> </a>
+            works = <a id="hrf" href="#/work" id="ppl"><li>&nbsp;&nbsp;Works &nbsp;&nbsp;</li> </a>
               
         }
 
@@ -263,7 +267,7 @@ display: none;
                bnrs = ''
                 blow ='padd'
         } else {
-            ati = <a href="#/articles" id="ppl" ><li>&nbsp;&nbsp;Articles &nbsp;&nbsp;</li></a>
+            ati = <a id="hrf" href="#/articles" id="ppl" ><li>&nbsp;&nbsp;Articles &nbsp;&nbsp;</li></a>
              
         }
         if (c == "contact") {
@@ -272,7 +276,7 @@ display: none;
                 blow ='padd'
 
         } else {
-            kontak = <a href="#/contact" id="ppl"><li>&nbsp;&nbsp;Contact &nbsp;&nbsp;</li></a>
+            kontak = <a id="hrf" href="#/contact" id="ppl"><li>&nbsp;&nbsp;Contact &nbsp;&nbsp;</li></a>
              
 
 
