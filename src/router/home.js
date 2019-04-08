@@ -51,6 +51,7 @@ class home extends Component {
     position: relative;
     font-weight: bold;
     font-family: mor;
+        letter-spacing: 1.8px;
     text-transform: uppercase;
   }
  
@@ -68,10 +69,9 @@ class home extends Component {
 
     }
     .ops{
-          font-family: mol;
+          font-family: vr;
        color: #25262a;
-    margin: 80px 8%;
-    font-weight: 600;
+    margin: 80px 8%; 
     margin-bottom: 0;
     }
  

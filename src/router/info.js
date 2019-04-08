@@ -18,8 +18,8 @@ class infox extends Component {
 #kkti{
 
     padding-top: 90px;
-    font-weight: 800;
-    font-family: mol;
+  
+    font-family: vr;
     color: #212D61;
         padding-bottom: 10px;
 }

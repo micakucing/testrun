@@ -11,6 +11,14 @@
   font-family: Mor;
   src: url('../fonts/Mor.woff');
 }
+@font-face {
+  font-family: vr;
+  src: url('../fonts/ver.woff');
+}
+@font-face {
+  font-family: vb;
+  src: url('../fonts/verb.woff');
+}
 body {
   line-height: 1.7;
   color: #8c92a0;
@@ -168,7 +176,8 @@ h1{
 
 .site-footer {
   background-color: #212D61;
-  padding: 4em 0; }
+  padding: 4em 0;
+  padding-bottom: 30px; }
   .site-footer ul li {
     margin-bottom: 10px; }
     .site-footer ul li a {

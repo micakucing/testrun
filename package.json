@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://micakucing.github.io/testrun/",
   "dependencies": {
+    "@brainhubeu/react-carousel": "^1.10.17",
     "express": "^4.16.3",
     "express-favicon": "^2.0.1",
     "gh-pages": "^2.0.1",
@@ -14,6 +15,7 @@
     "query-string": "^6.4.2",
     "react": "^16.8.6",
     "react-animation-components": "^3.0.0",
+    "react-crossfade-image": "^1.1.1",
     "react-custom-share": "^0.4.8",
     "react-device-orientation": "^0.0.2",
     "react-dom": "^16.8.6",
@@ -22,6 +24,7 @@
     "react-router": "^5.0.0",
     "react-router-dom": "^5.0.0",
     "react-scripts": "2.1.8",
+    "react-slideshow-image": "^1.1.5",
     "react-text-truncate": "^0.14.0",
     "react-transition-group": "^2.9.0"
   },

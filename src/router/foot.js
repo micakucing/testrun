@@ -12,9 +12,9 @@ class foot extends Component {
         }
           .obb{
         margin: 0 5%;
-    font-family: mor;
+    font-family: vr;
     color: #fff;
-        font-size: 16px;
+        font-size: 15px;
     letter-spacing: .3px;
   }
    #lok{

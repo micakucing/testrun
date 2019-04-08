@@ -2,55 +2,44 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import { default as minifyCssString } from 'minify-css-string'
 import $ from "jquery";
-import { Fade, Stagger } from 'react-animation-components'
- import queryString from 'query-string';
+  import queryString from 'query-string'; 
+import { Fade, Zoom } from 'react-slideshow-image';
 
 
+      const images = [
+  "http://a5.mzstatic.com/us/r30/Purple5/v4/c1/2f/4c/c12f4cba-1d9a-f6bf-2240-04085d3470ec/icon175x175.jpeg",
+  "http://is2.mzstatic.com/image/thumb/Purple122/v4/d2/36/28/d23628e5-c9bf-d0fb-104f-61fa52976ff5/source/175x175bb.jpg",
+  "http://a4.mzstatic.com/us/r30/Purple62/v4/1f/8d/f9/1f8df910-8ec7-3b8e-0104-d44e869f4d65/icon175x175.jpeg"
+];
+      
 class nav extends Component {
+  constructor() {
+    super();
+    this.state = {
+      imageIndex: 0
+    };
+     
+  }
     componentDidMount() {
+
+
+
+
  
-        $('#ccl > div').hide(); // hide all slides
-        $('#ccl > div:first-child').show(); // show first slide
-        let time = 5000;
-        let ol = 
-        this.interval = setInterval(() => { 
-                let slidea = $('#ccl  > div:first-child');
-                let slideb = slidea.next();
-                let width = $('#ccl > div:first-child').width();
-                $('#ccl > div:first-child').addClass("ignoresize").fadeOut(time).next().fadeIn(300).end().appendTo("#ccl");
-                clearInterval()
-
-            },
-            time + 5000);
-
-
-        $('#ggb > div').hide(); // hide all slides
-        $('#ggb > div:first-child').show(); // show first slide
-        let times = 5000;
-        this.intervals = setInterval(() => { 
-                let slideas = $('#ggb  > div:first-child');
-                let slidebs = slideas.next();
-                let widths = $('#ggb > div:first-child').width();
-                $('#ggb > div:first-child').addClass("ignoresize").fadeOut(times).next().fadeIn(300).end().appendTo("#ggb");
-                 clearInterval()
-            },
-            time + 5000);
-
 
     }
   componentWillMount() {
-  clearInterval(this.interval)
-        clearInterval(this.intervals)
+   
 }
 
     componentWillUnmount() {
-        clearInterval(this.interval)
-        clearInterval(this.intervals)
+       
+       
     }
 
 
     render() {
-        const cssString = `
+    const cssString = `
           #ccl{
               height: 150px;
               overflow: hidden;
@@ -131,7 +120,7 @@ a.clik{
 .sosb {
       width: 100%;
       padding: 0;
-          margin-bottom: 25px;
+          margin-bottom: 35px;
     }
     .sosb li {
       display: inline-block;
@@ -297,14 +286,36 @@ display: none;
         }
 
 
+
+    let fadeProperties = {
+  duration: 5000,
+  transitionDuration: 500,
+  infinite: true,
+  autoplay: true,
+  indicators: false,
+
+  arrows: false
+}
  
+const zoomOutProperties = {
+  duration: 5000,
+  transitionDuration: 800,
+  infinite: true,
+  indicators: false,
+  scale: 1,
+  arrows: false
+}
+
 
         return (
 
             <div>
                 
+
+
                           <style dangerouslySetInnerHTML={{__html: minifyCssString(cssString) }} /> 
                           <div className="site-wrap">
+
 <div className="site-mobile-menu"> 
     <div className="site-mobile-menu-header">
         <div className="site-mobile-menu-close mt-3">
@@ -345,22 +356,37 @@ display: none;
                         <div className="col-6 col-md-4 order-2 order-md-1 site-search-icon text-left">
                         </div>
                         <div id="ccl" className="col-12 mb-3 mb-md-0 col-md-4 order-1 order-md-2 text-center">
-                            <div id="plo" className="site-logo">
+
+
+
+    <Fade {...fadeProperties}>
+ 
+  <div id="plo" data-i={images[0]} className="site-logo">
                                
                             </div>
-                               <div id="plox" className="site-logo">
+                                <div id="plox"  data-i={images[1]} className="site-logo">
                                
                             </div>
+ 
+  </Fade>
+
+
+
+
+                           
+                           
                         </div>
                         <div className="col-12 col-md-4 order-3 order-md-3 text-right">
                             <div id="rel" className="site-top-icons">
                             <div id="ggb">
-                                 <div id="plomini" className="site-logo">
+  <Zoom {...zoomOutProperties}>
+                                 <div id="plomini"    className="site-logo">
                                
                             </div>
-                              <div id="ploxmini" className="site-logo">
+                              <div id="ploxmini"   className="site-logo">
                                
                             </div>
+                              </ Zoom>
                             </div>
                                 <ul>
                                     <li className="d-inline-block d-md-none ml-md-0">

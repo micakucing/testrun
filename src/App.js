@@ -13,7 +13,6 @@ function App() {
  <Switch>
         <Route path="/" exact component={Index} />
                 <Route path="/information" component={Info} />
-           <Route path="/information/:id" component={Info} />
          <Route component={Notfound} />
 
  </Switch>

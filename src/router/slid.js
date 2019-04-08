@@ -9,6 +9,7 @@ class slid extends Component {
   let links = ["http://www.def.com"];
         let images = ["https://res.cloudinary.com/forestrun/image/upload/v1554636363/Foto_Forest02.jpg"];
         let i = 0;
+        let time = 4;
         this.renew = setInterval(function(){
             if(links.length == i){
                 i = 0;
@@ -20,7 +21,7 @@ class slid extends Component {
 
         }
          clearInterval()
-        },1000);
+        }, (time  *  1000) * 2);
 
     }
 
