@@ -145,6 +145,9 @@ a.clik{
   
     width: 25%;
 }
+#padtops{
+  padding-bottom: 20px;
+}
 .sosbs{
         display: block;
     padding-left: 30px;
@@ -231,7 +234,7 @@ display: none;
 
 
 
-        let c, homes, abouts, blow, works, bnrs, shops, kontak, ati;
+        let c, homes, abouts, blow, tops, works, bnrs, shops, kontak, ati;
         c = window.location.hash.substr(2)
         var t = window.location.href
         var o = t.split("/")[4]
@@ -240,15 +243,18 @@ display: none;
             homes =  <li><a className="clik">HOME</a></li>
             bnrs = <div className="container"><div className="row align-items-start align-items-md-center justify-content-end"><div className="col-md-12 text-center text-md-center pt-5 pt-md-0" id="lkps"><img className="thumb-image loaded"  src="https://res.cloudinary.com/forestrun/image/upload/f_auto/v1554636128/t.png" /> <div className="intro-text text-center text-md-center"><p><a id="regme" href="#" className="btn btn-sm btn-primary">DAFTAR</a></p></div></div></div></div>
              blow =''
+             tops =''
         } else {
             homes = <li><a id="hrf"  href="#/">HOME</a></li>
                         bnrs =  <div className="container"><div className="row align-items-start align-items-md-center justify-content-end"><div className="col-md-12 text-center text-md-center pt-5 pt-md-0" id="lkps"><img className="thumb-image loaded"  src="https://res.cloudinary.com/forestrun/image/upload/f_auto/v1554636128/t.png" /> <div className="intro-text text-center text-md-center"><p><a id="regme" href="#" className="btn btn-sm btn-primary">DAFTAR</a></p></div></div></div></div>
  blow =''
+ tops =''
         }
         if (c == "information") {
             abouts =  <li><a className="clik">INFORMATION</a></li>
                bnrs = ''
                 blow ='padd'
+                tops ='padtops'
         } else {
             abouts = <li><a id="hrf" href="#/information">INFORMATION</a></li>
               
@@ -257,6 +263,7 @@ display: none;
             works = <a id="aloy" className="activex"><li>&nbsp;&nbsp;Works &nbsp;&nbsp;</li> </a>
                 bnrs = ''
                  blow ='padd'
+                  tops ='padtops'
         } else {
             works = <a id="hrf" href="#/work" id="ppl"><li>&nbsp;&nbsp;Works &nbsp;&nbsp;</li> </a>
               
@@ -266,6 +273,7 @@ display: none;
             ati = <a className="activex"><li>&nbsp;&nbsp;Articles &nbsp;&nbsp;</li></a>
                bnrs = ''
                 blow ='padd'
+                 tops ='padtops'
         } else {
             ati = <a id="hrf" href="#/articles" id="ppl" ><li>&nbsp;&nbsp;Articles &nbsp;&nbsp;</li></a>
              
@@ -274,6 +282,7 @@ display: none;
             kontak = <a className="activex"><li>&nbsp;&nbsp;Contact &nbsp;&nbsp;</li> </a>
                bnrs = ''
                 blow ='padd'
+                tops ='padtops' 
 
         } else {
             kontak = <a id="hrf" href="#/contact" id="ppl"><li>&nbsp;&nbsp;Contact &nbsp;&nbsp;</li></a>
@@ -314,7 +323,7 @@ display: none;
     </div>   
 </div>
 </div>
-                <header className="site-navbar" role="banner">
+                <header id={tops} className="site-navbar" role="banner">
             <div className="site-navbar-top">
                 <div  className="container">
                     <div className="order-3 order-md-3 text-right">
