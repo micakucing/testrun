@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
+import Nav from "./nav";
 
 class about extends Component {
     componentDidMount() {}
@@ -8,9 +9,7 @@ class about extends Component {
 
             <div>
 
-            <Link to="/">Home</Link>
-            <br />
- about 
+              <Nav />
       </div>
 
         );

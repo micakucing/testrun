@@ -45,6 +45,13 @@ class nav extends Component {
 
     render() {
         const cssString = `
+          #ccl{
+              height: 150px;
+              overflow: hidden;
+        }
+#padd{
+  padding-bottom: 20px;
+}
          #plomini{
 display: none;
   }
@@ -55,6 +62,11 @@ display: none;
       margin-top: 20px;
 
     }
+      #pg{
+       font-size: 18px;
+    padding: 8px;
+        color: #fff;
+  }
 #plo{
 margin: 0 auto;
     height: 150px;
@@ -110,12 +122,40 @@ a.clik{
   font-family: mor;
 
 }
+.sosb {
+      width: 100%;
+      padding: 0;
+          margin-bottom: 25px;
+    }
+    .sosb li {
+      display: inline-block;
+    }
+      .sosbs {
+      width: 100%;
+      padding: 0;
+    }
+    .sosbs li {
+      display: inline-block;
+    }
+      .sosbs{
+      display: none;
+    }
 @media (max-width: 992px) {
  .btn.btn-primary {
   
     width: 25%;
 }
-
+.sosbs{
+        display: block;
+    padding-left: 30px;
+    padding-right: 10%;
+    margin-bottom: 0;
+    }
+      .sosbs li span {
+           width: 80px;
+    margin: 20px;
+    display: block;
+      }
       #lkps{
     padding-bottom: 30px;
     margin-top: 10%;
@@ -155,9 +195,7 @@ display: block;
     background-size: contain;
     background-repeat: no-repeat;
   }
-  #mags {
-    max-width: 60%;
-}
+
      #ploxmini{
 display: block;
     height: 80px;
@@ -189,45 +227,59 @@ display: none;
 
 
 
-        let c, homes, abouts, works, shops, kontak, ati;
+        let c, homes, abouts, blow, works, bnrs, shops, kontak, ati;
         c = window.location.hash.substr(2)
         var t = window.location.href
         var o = t.split("/")[4]
  
         if (c == "") {
             homes =  <li><a className="clik">HOME</a></li>
+            bnrs = <div className="container"><div className="row align-items-start align-items-md-center justify-content-end"><div className="col-md-12 text-center text-md-center pt-5 pt-md-0" id="lkps"><img className="thumb-image loaded"  src="https://res.cloudinary.com/forestrun/image/upload/f_auto/v1554636128/t.png" /> <div className="intro-text text-center text-md-center"><p><a id="regme" href="#" className="btn btn-sm btn-primary">DAFTAR</a></p></div></div></div></div>
+             blow =''
         } else {
             homes = <li><a  href="#/">HOME</a></li>
+                        bnrs =  <div className="container"><div className="row align-items-start align-items-md-center justify-content-end"><div className="col-md-12 text-center text-md-center pt-5 pt-md-0" id="lkps"><img className="thumb-image loaded"  src="https://res.cloudinary.com/forestrun/image/upload/f_auto/v1554636128/t.png" /> <div className="intro-text text-center text-md-center"><p><a id="regme" href="#" className="btn btn-sm btn-primary">DAFTAR</a></p></div></div></div></div>
+ blow =''
         }
-        if (c == "about") {
-            abouts = <a className="activex"><li>&nbsp;&nbsp;About &nbsp;&nbsp;</li> </a>
+        if (c == "information") {
+            abouts =  <li><a className="clik">INFORMATION</a></li>
+               bnrs = ''
+                blow ='padd'
         } else {
-            abouts = <a href="#/about" id="ppl"><li>&nbsp;&nbsp;About &nbsp;&nbsp;</li> </a>
+            abouts = <li><a href="#/information">INFORMATION</a></li>
+              
         }
         if (c == "work" || o == "workproduct") {
             works = <a id="aloy" className="activex"><li>&nbsp;&nbsp;Works &nbsp;&nbsp;</li> </a>
+                bnrs = ''
+                 blow ='padd'
         } else {
             works = <a href="#/work" id="ppl"><li>&nbsp;&nbsp;Works &nbsp;&nbsp;</li> </a>
+              
         }
 
         if (c == "articles" || o == "articles-data") {
             ati = <a className="activex"><li>&nbsp;&nbsp;Articles &nbsp;&nbsp;</li></a>
+               bnrs = ''
+                blow ='padd'
         } else {
             ati = <a href="#/articles" id="ppl" ><li>&nbsp;&nbsp;Articles &nbsp;&nbsp;</li></a>
+             
         }
         if (c == "contact") {
             kontak = <a className="activex"><li>&nbsp;&nbsp;Contact &nbsp;&nbsp;</li> </a>
+               bnrs = ''
+                blow ='padd'
 
         } else {
             kontak = <a href="#/contact" id="ppl"><li>&nbsp;&nbsp;Contact &nbsp;&nbsp;</li></a>
+             
 
 
         }
 
 
-
-
-
+ 
 
         return (
 
@@ -250,8 +302,8 @@ display: none;
                       
                         {homes}
 
-
-                        <li><a href="#">INFORMATION</a></li>
+  {abouts}
+                         
                         <li><a href="#">REGISTRATION</a></li>
                         <li><a href="#">CONTACT</a></li></ul>
 
@@ -305,30 +357,18 @@ display: none;
                     </div>
                 </div>
             </div>
-            <nav className="site-navigation text-right text-md-center" role="navigation">
+            <nav id={blow} className="site-navigation text-right text-md-center" role="navigation">
                 <div id="gh" className="container">
                     <ul className="site-menu js-clone-nav d-none d-md-block">
                        
  {homes}
-                        <li><a href="#">INFORMATION</a></li>
+                       {abouts}
                         <li><a href="#">REGISTRATION</a></li>
                         <li><a href="#">CONTACT</a></li>
                     </ul>
                 </div>
             </nav>
-            <div className="container">
-                <div className="row align-items-start align-items-md-center justify-content-end">
-                    <div className="col-md-12 text-center text-md-center pt-5 pt-md-0" id="lkps">
-  <img class="thumb-image loaded"  src="https://res.cloudinary.com/forestrun/image/upload/f_auto/v1554636128/t.png" />
-
-                        <div className="intro-text text-center text-md-center">
-                               <p>
-                                <a id="regme" href="#" className="btn btn-sm btn-primary">DAFTAR</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {bnrs}
         </header>
       </div>
 

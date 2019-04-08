@@ -11,15 +11,7 @@ class home extends Component {
     componentDidMount() {}
     render() {
         const cssString = `
-        #ccl{
-              height: 150px;
-              overflow: hidden;
-        }
-  #pg{
-       font-size: 18px;
-    padding: 8px;
-        color: #fff;
-  }
+      
  
    
     .ppt{
@@ -81,21 +73,7 @@ class home extends Component {
     font-weight: 600;
     margin-bottom: 0;
     }
-    .sosb {
-      width: 100%;
-      padding: 0;
-          margin-bottom: 25px;
-    }
-    .sosb li {
-      display: inline-block;
-    }
-      .sosbs {
-      width: 100%;
-      padding: 0;
-    }
-    .sosbs li {
-      display: inline-block;
-    }
+ 
 #krow{
       margin: 0 50px;
 }
@@ -115,10 +93,7 @@ class home extends Component {
     letter-spacing: 2px;
     margin-bottom: 50px !important;
     }
-    .sosbs{
-      display: none;
-    }
-
+ 
 
     @media (max-width: 992px) {
 
@@ -147,17 +122,7 @@ class home extends Component {
       .site-blocks-cover, .site-blocks-cover .row{
         min-height: 200px;
       }
-        .sosbs{
-        display: block;
-    padding-left: 30px;
-    padding-right: 10%;
-    margin-bottom: 0;
-    }
-      .sosbs li span {
-           width: 80px;
-    margin: 20px;
-    display: block;
-      }
+        
       #krow{
       margin: 0;
 }

@@ -9,7 +9,7 @@ class slid extends Component {
   let links = ["http://www.def.com"];
         let images = ["https://res.cloudinary.com/forestrun/image/upload/v1554636363/Foto_Forest02.jpg"];
         let i = 0;
-        let renew = setInterval(function(){
+        this.renew = setInterval(function(){
             if(links.length == i){
                 i = 0;
             }
@@ -22,6 +22,14 @@ class slid extends Component {
         },1000);
 
     }
+
+
+      componentWillUnmount() {
+
+    clearInterval(this.renew);
+
+
+}
     render() {
     		const cssString = `
 #boxed{
