@@ -103,10 +103,6 @@ class home extends Component {
          margin: 30px 25%;
     margin-right: 29%;
 }
-#lkp{
-  padding-bottom: 30px;
-    margin-top: 20px;
-}
 
  
 #rel{
@@ -179,11 +175,7 @@ class home extends Component {
     .site-section {
     padding: 3.5em 0;
 }
-      #lkp{
-    padding-bottom: 30px;
-    margin-top: 10%;
-    margin-bottom: 10%;
-}
+
       .h1, h1 {
     font-size: 1.5rem;
 }

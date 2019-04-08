@@ -33,11 +33,20 @@ class slid extends Component {
  #mags{
     max-width: 50%;
  }
+ #lkp{
+  padding-bottom: 30px;
+    margin-top: 20px;
+}
+
     @media (max-width: 992px) {
    #mags{
     max-width: 70%;
  }
-
+      #lkp{
+    padding-bottom: 30px;
+    margin-top: 10%;
+    margin-bottom: 13%;
+}
     }
    @media (max-width: 800px) {
   #mags {
