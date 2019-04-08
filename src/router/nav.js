@@ -2,44 +2,37 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import { default as minifyCssString } from 'minify-css-string'
 import $ from "jquery";
-  import queryString from 'query-string'; 
+import queryString from 'query-string';
 import { Fade, Zoom } from 'react-slideshow-image';
 
 
-      const images = [
-  "http://a5.mzstatic.com/us/r30/Purple5/v4/c1/2f/4c/c12f4cba-1d9a-f6bf-2240-04085d3470ec/icon175x175.jpeg",
-  "http://is2.mzstatic.com/image/thumb/Purple122/v4/d2/36/28/d23628e5-c9bf-d0fb-104f-61fa52976ff5/source/175x175bb.jpg",
-  "http://a4.mzstatic.com/us/r30/Purple62/v4/1f/8d/f9/1f8df910-8ec7-3b8e-0104-d44e869f4d65/icon175x175.jpeg"
+const images = [
+    "http://a5.mzstatic.com/us/r30/Purple5/v4/c1/2f/4c/c12f4cba-1d9a-f6bf-2240-04085d3470ec/icon175x175.jpeg",
+    "http://is2.mzstatic.com/image/thumb/Purple122/v4/d2/36/28/d23628e5-c9bf-d0fb-104f-61fa52976ff5/source/175x175bb.jpg",
+    "http://a4.mzstatic.com/us/r30/Purple62/v4/1f/8d/f9/1f8df910-8ec7-3b8e-0104-d44e869f4d65/icon175x175.jpeg"
 ];
-      
+
 class nav extends Component {
-  constructor() {
-    super();
-    this.state = {
-      imageIndex: 0
-    };
-     
-  }
-    componentDidMount() {
-
-
-
-
- 
+    constructor() {
+        super();
+        this.state = {
+            imageIndex: 0
+        };
 
     }
-  componentWillMount() {
-   
-}
+    componentDidMount() {}
+    componentWillMount() {
+
+    }
 
     componentWillUnmount() {
-       
-       
+
+
     }
 
 
     render() {
-    const cssString = `
+        const cssString = `
           #ccl{
               height: 150px;
               overflow: hidden;
@@ -91,7 +84,7 @@ margin: 0 auto;
     max-height: 100%;
 }
 #ggb{
-      width: 90%;
+      width: 75%;
     overflow: hidden;
     height: 80px;
     position: absolute;
@@ -220,91 +213,91 @@ display: none;
 
 
 
- $(document).on("click", "#hrf", function(e) {
+        $(document).on("click", "#hrf", function(e) {
 
             $('body').removeClass('offcanvas-menu')
-            
+
         })
 
- 
+
 
         let c, homes, abouts, blow, tops, works, bnrs, shops, kontak, ati;
         c = window.location.hash.substr(2)
         var t = window.location.href
         var o = t.split("/")[4]
- 
+
         if (c == "") {
-            homes =  <li><a className="clik">HOME</a></li>
+            homes = <li><a className="clik">HOME</a></li>
             bnrs = <div className="container"><div className="row align-items-start align-items-md-center justify-content-end"><div className="col-md-12 text-center text-md-center pt-5 pt-md-0" id="lkps"><img className="thumb-image loaded"  src="https://res.cloudinary.com/forestrun/image/upload/f_auto/v1554636128/t.png" /> <div className="intro-text text-center text-md-center"><p><a id="regme" href="#" className="btn btn-sm btn-primary">DAFTAR</a></p></div></div></div></div>
-             blow =''
-             tops =''
+            blow = ''
+            tops = ''
         } else {
             homes = <li><a id="hrf"  href="#/">HOME</a></li>
-                        bnrs =  <div className="container"><div className="row align-items-start align-items-md-center justify-content-end"><div className="col-md-12 text-center text-md-center pt-5 pt-md-0" id="lkps"><img className="thumb-image loaded"  src="https://res.cloudinary.com/forestrun/image/upload/f_auto/v1554636128/t.png" /> <div className="intro-text text-center text-md-center"><p><a id="regme" href="#" className="btn btn-sm btn-primary">DAFTAR</a></p></div></div></div></div>
- blow =''
- tops =''
+            bnrs = <div className="container"><div className="row align-items-start align-items-md-center justify-content-end"><div className="col-md-12 text-center text-md-center pt-5 pt-md-0" id="lkps"><img className="thumb-image loaded"  src="https://res.cloudinary.com/forestrun/image/upload/f_auto/v1554636128/t.png" /> <div className="intro-text text-center text-md-center"><p><a id="regme" href="#" className="btn btn-sm btn-primary">DAFTAR</a></p></div></div></div></div>
+            blow = ''
+            tops = ''
         }
         if (c == "information") {
-            abouts =  <li><a className="clik">INFORMATION</a></li>
-               bnrs = ''
-                blow ='padd'
-                tops ='padtops'
+            abouts = <li><a className="clik">INFORMATION</a></li>
+            bnrs = ''
+            blow = 'padd'
+            tops = 'padtops'
         } else {
             abouts = <li><a id="hrf" href="#/information">INFORMATION</a></li>
-              
+
         }
         if (c == "information" || o == "information") {
-             abouts =  <li><a className="clik">INFORMATION</a></li>
-               bnrs = ''
-                blow ='padd'
-                tops ='padtops'
+            abouts = <li><a className="clik">INFORMATION</a></li>
+            bnrs = ''
+            blow = 'padd'
+            tops = 'padtops'
         } else {
             abouts = <li><a id="hrf" href="#/information">INFORMATION</a></li>
-              
+
         }
 
         if (c == "articles" || o == "articles-data") {
             ati = <a className="activex"><li>&nbsp;&nbsp;Articles &nbsp;&nbsp;</li></a>
-               bnrs = ''
-                blow ='padd'
-                 tops ='padtops'
+            bnrs = ''
+            blow = 'padd'
+            tops = 'padtops'
         } else {
             ati = <a id="hrf" href="#/articles" id="ppl" ><li>&nbsp;&nbsp;Articles &nbsp;&nbsp;</li></a>
-             
+
         }
         if (c == "contact") {
             kontak = <a className="activex"><li>&nbsp;&nbsp;Contact &nbsp;&nbsp;</li> </a>
-               bnrs = ''
-                blow ='padd'
-                tops ='padtops' 
+            bnrs = ''
+            blow = 'padd'
+            tops = 'padtops'
 
         } else {
             kontak = <a id="hrf" href="#/contact" id="ppl"><li>&nbsp;&nbsp;Contact &nbsp;&nbsp;</li></a>
-             
+
 
 
         }
 
 
 
-    let fadeProperties = {
-  duration: 5000,
-  transitionDuration: 500,
-  infinite: true,
-  autoplay: true,
-  indicators: false,
+        let fadeProperties = {
+            duration: 5000,
+            transitionDuration: 500,
+            infinite: true,
+            autoplay: true,
+            indicators: false,
 
-  arrows: false
-}
- 
-const zoomOutProperties = {
-  duration: 5000,
-  transitionDuration: 800,
-  infinite: true,
-  indicators: false,
-  scale: 1,
-  arrows: false
-}
+            arrows: false
+        }
+
+        const zoomOutProperties = {
+            duration: 5000,
+            transitionDuration: 800,
+            infinite: true,
+            indicators: false,
+            scale: 1,
+            arrows: false
+        }
 
 
         return (
