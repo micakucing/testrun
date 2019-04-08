@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { default as minifyCssString } from 'minify-css-string'
 import $ from "jquery";
 import { Fade, Stagger } from 'react-animation-components'
+ 
 
 class nav extends Component {
     componentDidMount() {
@@ -231,6 +232,7 @@ display: none;
         return (
 
             <div>
+                
                           <style dangerouslySetInnerHTML={{__html: minifyCssString(cssString) }} /> 
                           <div className="site-wrap">
 <div className="site-mobile-menu"> 

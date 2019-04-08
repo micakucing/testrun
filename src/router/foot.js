@@ -14,7 +14,7 @@ class foot extends Component {
         margin: 0 5%;
     font-family: mor;
     color: #fff;
-        font-size: 15px;
+        font-size: 16px;
     letter-spacing: .3px;
   }
 .App{
