@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
  import { default as minifyCssString } from 'minify-css-string';
  import 'react-photoswipe/lib/photoswipe.css';
   import { PhotoSwipeGallery } from 'react-photoswipe';
+import queryString from 'query-string';
 
 class infox extends Component {
     componentDidMount() {}
@@ -51,6 +52,8 @@ class infox extends Component {
 
 
     		`      
+    		let param = window.location.pathname;
+ 
     		const items = [{
                   src: 'https://res.cloudinary.com/forestrun/image/upload/v1554636282/Medal.jpg',
                   thumbnail: 'https://res.cloudinary.com/forestrun/image/upload/v1554636282/Medal.jpg',
