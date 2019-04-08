@@ -9,7 +9,8 @@ class not extends Component {
   let c = window.location.hash.substr(2)
    let format = /[ !@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
 if(format.test(c)){
-window.location.href="#/"
+window.location.href="/testrun/#/"
+//window.location.href="/"
 return
 }else{
 
