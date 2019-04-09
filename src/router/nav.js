@@ -37,6 +37,9 @@ class nav extends Component {
               height: 150px;
               overflow: hidden;
         }
+        .site-navbar .site-navigation .site-menu > li {
+     padding: 0 10px;
+}
 #padd{
   padding-bottom: 20px;
 }
@@ -128,10 +131,20 @@ a.clik{
       .sosbs{
       display: none;
     }
+
+@media (max-width: 1280px) {
+
+#plo{
+ 
+    width: 70%;
+   
+}
+
+}
 @media (max-width: 992px) {
  .btn.btn-primary {
   
-    width: 25%;
+    width: 18%;
 }
 #padtops{
   padding-bottom: 20px;
@@ -152,7 +165,11 @@ a.clik{
     margin-top: 10%;
     margin-bottom: 1%;
 }
-
+#lkps {
+    padding-bottom: 30px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
 }
 
 @media (max-width: 860px) {
@@ -160,7 +177,28 @@ a.clik{
  
 }
 
-    @media (max-width: 800px) {
+
+@media (max-width: 768px){
+.container {
+    max-width: 600px;
+}
+
+#lkps {
+    padding-bottom: 30px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+}
+@media (max-width: 650px) {
+#lkps {
+    padding-bottom: 30px;
+    margin-top: 3% !important;
+    margin-bottom: 1%;
+}
+}
+
+    @media (max-width: 767px) {
 
 #plo{
      height: 150px;
@@ -181,7 +219,7 @@ a.clik{
 display: block;
     height: 80px;
      background-image: url(https://res.cloudinary.com/forestrun/image/upload/v1554636231/Logo_Run.png);
-    width: 55%;
+    width: 45%;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -208,6 +246,8 @@ display: none;
 }
 
 }
+
+
 
 `
 

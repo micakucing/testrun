@@ -49,8 +49,14 @@ class infox extends Component {
 
 
 }
+    @media (max-width: 800px) {
+
+#jkm {
+    max-width: 580px;
+}
 
 
+}
     		`      
     		let param = window.location.pathname;
  
