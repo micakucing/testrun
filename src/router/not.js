@@ -11,7 +11,7 @@ class not extends Component {
   let c = window.location.hash.substr(2)
    let format = /[ !@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
 if(format.test(c)){
-      window.location.assign("https://micakucing.github.io/testrun/");
+      window.location.assign("https://cikoleforestrun.co.id/");
 
  
 //window.location.href="/"
@@ -25,7 +25,7 @@ return
        let c = window.location.hash.substr(2)
    let format = /[ !@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
 if(format.test(c)){
-      window.location.assign("https://micakucing.github.io/testrun/");
+      window.location.assign("https://cikoleforestrun.co.id/");
 //window.location.href="/"
 return
 }else{
