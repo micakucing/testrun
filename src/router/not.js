@@ -139,7 +139,7 @@ footer{
      
 }
   .tlt{
- 
+   margin: 0 30px;
     margin-bottom: 20%;
      
 }
