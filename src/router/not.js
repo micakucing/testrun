@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import { default as minifyCssString } from 'minify-css-string'
-import Nav from "./nav";
-import Fot from "./foot";
+ import Fot from "./foot";
 import $ from "jquery";
 
 class not extends Component {
