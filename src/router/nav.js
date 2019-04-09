@@ -181,7 +181,7 @@ a.clik{
 display: block;
     height: 80px;
      background-image: url(https://res.cloudinary.com/forestrun/image/upload/v1554636231/Logo_Run.png);
-    width: 35%;
+    width: 55%;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -192,7 +192,7 @@ display: block;
     height: 80px;
        background-image: url(https://res.cloudinary.com/forestrun/image/upload/v1554636231/Logo_Run2.png);
 
-     width: 65%;
+     width: 75%;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;

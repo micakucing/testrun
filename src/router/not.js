@@ -138,11 +138,7 @@ footer{
       font-size: 11px;
      
 }
-  .tlt{
-   margin: 0 30px;
-    margin-bottom: 20%;
-     
-}
+
 
 .tilt{
   font-size: 2rem;
@@ -198,6 +194,19 @@ footer{
 }
 
 }
+
+
+@media (max-width: 480px) {
+
+  .tlt{
+   margin: 0 30px;
+    margin-bottom: 20%;
+     
+}
+
+}
+
+
 `
 /*
 var lFollowX = 0,
