@@ -129,7 +129,7 @@ footer{
 
 .san {
       font-size: 15px;
-    font-family: mor;
+    font-family: vr;
     opacity: 1;
     letter-spacing: 2px;
 }
