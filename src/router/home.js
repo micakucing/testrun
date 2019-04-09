@@ -6,6 +6,7 @@ import Nav from "./nav";
 import Mid from "./mid";
 import Bot from "./aboutb";
 import Fot from "./foot";
+import { Helmet } from "react-helmet";
 
 class home extends Component {
     componentDidMount() {
@@ -69,10 +70,11 @@ class home extends Component {
 
     }
     .ops{
-          font-family: vr;
+          font-family: Quicksand;
        color: #25262a;
-    margin: 80px 8%; 
+    margin: 80px 6%; 
     margin-bottom: 0;
+        font-size: 20px;
     }
  
 #krow{
@@ -181,6 +183,11 @@ class home extends Component {
 `
         return (
             <div>
+               <Helmet>
+                <meta charSet="utf-8" />
+                <title>Welcome To Cikole Forest Run</title>
+                
+             </Helmet>
               <style dangerouslySetInnerHTML={{__html: minifyCssString(cssString) }} /> 
                
   <Nav />

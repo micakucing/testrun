@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
  import 'react-photoswipe/lib/photoswipe.css';
   import { PhotoSwipeGallery } from 'react-photoswipe';
 import queryString from 'query-string';
+import { Helmet } from "react-helmet";
 
 class infox extends Component {
     componentDidMount() {}
@@ -18,10 +19,11 @@ class infox extends Component {
 #kkti{
 
     padding-top: 90px;
-  
-    font-family: vr;
+      font-size: 18px;
+
+    font-family: Quicksand;
     color: #212D61;
-        padding-bottom: 10px;
+        padding-bottom: 25px;
 }
 
 .pswp--animated-in .pswp__bg, .pswp--animated-in .pswp__zoom-wrap {
@@ -37,13 +39,14 @@ class infox extends Component {
   display: none;
  }
     @media (max-width: 992px) {
-
+#jkm {
+    max-width: 780px;
+}
 
 #kkti {
     padding-top: 50px;
      
-    font-size: 13px;
-     
+      font-size: 15px;
     padding-bottom: 30px;
 }
 
@@ -91,6 +94,13 @@ class infox extends Component {
         return (
 
             <div>
+
+       <Helmet>
+                <meta charSet="utf-8" />
+                <title>Cikole Forest Run | information </title>
+                
+             </Helmet>
+
                                       <style dangerouslySetInnerHTML={{__html: minifyCssString(cssString) }} /> 
 
 <div id="jkm" className="container">

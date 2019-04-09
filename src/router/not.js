@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import { default as minifyCssString } from 'minify-css-string'
- import Fot from "./foot";
+import Fot from "./foot";
 import $ from "jquery";
+import { Helmet } from "react-helmet";
 
 class not extends Component {
   componentDidMount() {
@@ -242,6 +243,11 @@ animate();*/
         return (
 
             <div>
+             <Helmet>
+                <meta charSet="utf-8" />
+                <title>Error 404 not found </title>
+                
+             </Helmet>
                           <style dangerouslySetInnerHTML={{__html: minifyCssString(cssString) }} /> 
 
                           <div className="gone">

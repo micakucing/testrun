@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import { default as minifyCssString } from 'minify-css-string'
+import BackgroundSlider from 'react-background-slider'
 
 class slid extends Component {
     componentDidMount() {
+/*
 
-
-  let links = ["http://www.def.com"];
-        let images = ["https://res.cloudinary.com/forestrun/image/upload/v1554636363/Foto_Forest02.jpg"];
+  let links = ["n","a","f","p"];
+        let images = ["https://res.cloudinary.com/forestrun/image/upload/v1554798969/h.jpg","https://res.cloudinary.com/forestrun/image/upload/v1554636363/Foto_Forest02.jpg","https://res.cloudinary.com/forestrun/image/upload/v1554797905/p1.jpg","https://res.cloudinary.com/forestrun/image/upload/v1554797905/p2.jpg"];
         let i = 0;
         let time = 4;
         this.renew = setInterval(function(){
@@ -21,8 +22,8 @@ class slid extends Component {
 
         }
          clearInterval()
-        }, (time  *  1000) * 2);
-
+        }, 1000);
+*/
     }
 
 
@@ -72,7 +73,12 @@ class slid extends Component {
             <div>
                           <style dangerouslySetInnerHTML={{__html: minifyCssString(cssString) }} /> 
 
-                  <div className="site-blocks-cover" id="bannerImage"  data-aos="fade">
+                  <div className="site-blocks-cover"   data-aos="fade">
+                  <BackgroundSlider
+  images={["https://res.cloudinary.com/forestrun/image/upload/v1554798969/h.jpg",
+  "https://res.cloudinary.com/forestrun/image/upload/v1554636363/Foto_Forest02.jpg",
+  "https://res.cloudinary.com/forestrun/image/upload/v1554797905/p1.jpg","https://res.cloudinary.com/forestrun/image/upload/v1554797905/p2.jpg"]}
+  duration={5} transition={0} />
             <div className="container">
                 <div id="boxed" className="row align-items-start align-items-md-center justify-content-end">
                     <div className="col-md-12 text-center text-md-center pt-5 pt-md-0" id="lkp">

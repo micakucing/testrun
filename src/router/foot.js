@@ -12,7 +12,7 @@ class foot extends Component {
         }
           .obb{
         margin: 0 5%;
-    font-family: vr;
+    font-family: Quicksand;
     color: #fff;
         font-size: 15px;
     letter-spacing: .3px;
