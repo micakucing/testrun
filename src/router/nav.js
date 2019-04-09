@@ -144,7 +144,7 @@ a.clik{
 @media (max-width: 992px) {
  .btn.btn-primary {
   
-    width: 18%;
+    width: 23.3%;
 }
 #padtops{
   padding-bottom: 20px;
@@ -247,8 +247,12 @@ display: none;
 
 }
 
-
-
+    @media (max-width: 480px) {
+.btn.btn-primary {
+    width: 23.3%;
+}
+ 
+}
 `
 
 
