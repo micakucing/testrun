@@ -278,6 +278,11 @@ display: none;
 
         }
 
+  
+
+
+
+
 
 
         let fadeProperties = {
