@@ -155,7 +155,26 @@ class home extends Component {
 
     @media (max-width: 800px) {
 
+#pbb {
+    font-size: 20px;
+}
 
+.ops {
+    margin-top: 80px;
+        font-size: 13px;
+}
+.site-section-heading.text-center:before {
+    content: "";
+    left: 50%;
+    top: 60px;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    position: absolute;
+    width: 11%;
+    height: 3px;
+    background: #25262a;
+}
 }
 
 
