@@ -110,7 +110,7 @@ footer{
  
 .tilt{
   font-size: 5rem;
-   opacity: .6;
+   opacity: 1;
 }
 .tlt{
       z-index: 1;
